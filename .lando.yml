@@ -1,0 +1,12 @@
+name: villa
+recipe: drupal10
+services:
+  appcache:
+    type: redis:6
+    perist: false
+    portforward: false
+tooling:
+  redis-cli:
+    service: appcache
+config:
+  webroot: web
